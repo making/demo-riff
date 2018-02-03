@@ -144,6 +144,42 @@ chmod +x upper.sh
 riff create -i lower -u making
 ```
 
+```
+riff publish -i lower -d hello -r
+```
+
+### Pythonの場合
+
+
+```
+mkdir -p pyhon/lower
+cd pyhon/lower
+```
+
+``` python
+cat <<'EOF' > lower.py
+# -*- coding: utf-8 -*-
+def process(data):
+    print(data.lower())
+
+if __name__ == '__main__':
+
+    while True:
+        data = raw_input()
+        process(data)
+EOF
+cat <<'EOF' > requirements.txt
+EOF
+```
+
+```
+riff create -i upper -u making --handler process
+```
+
+```
+riff publish -i upper -d HELLO -r
+```
+
 ### Javaの場合
 
 ```
