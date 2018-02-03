@@ -132,7 +132,7 @@ mkdir -p shell/upper
 cd shell/upper
 ```
 
-```
+``` sh
 cat <<'EOF' > upper.sh
 #!/bin/bash
 echo $1 | tr [:lower:] [:upper:]
