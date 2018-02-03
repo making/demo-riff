@@ -18,14 +18,21 @@ kubectl config uset-context docker-for-desktop
 ### Hemlのセットアップ
 
 ```
-./setup-helm.sh
+kubectl -n kube-system create serviceaccount tiller
+kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+helm init --service-account=tiller
+
+helm repo add riffrepo https://riff-charts.storage.googleapis.com
+helm repo update
 ```
 
 
 ### Riffのインストール
 
 ```
-./setup-riff.sh
+helm install riffrepo/riff --name demo \
+     --version 0.0.3-rbac \
+     --set httpGateway.service.type=NodePort
 ```
 
 
