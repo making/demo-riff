@@ -1,0 +1,9 @@
+apiVersion: projectriff.io/v1
+kind: Function
+metadata:
+  name: upper
+spec:
+  protocol: stdio
+  input: lower
+  container:
+    image: making/upper:0.0.1

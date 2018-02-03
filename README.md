@@ -83,7 +83,7 @@ mkdir samples
 cd samples
 ```
 
-#### Node.jsの場合
+#### JavaScriptの場合
 
 ```
 mkdir -p node/square
@@ -122,6 +122,26 @@ riff publish -i numbers -d 10
 
 ```
 riff publish -i numbers -d 10 -r
+```
+
+### Shell Scriptの場合
+
+
+```
+mkdir -p shell/upper
+cd shell/upper
+```
+
+```
+cat <<'EOF' > upper.sh
+#!/bin/bash
+echo $1 | tr [:lower:] [:upper:]
+EOF
+chmod +x upper.sh
+```
+
+```
+riff create -i lower -u making
 ```
 
 ### Javaの場合
