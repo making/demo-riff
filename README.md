@@ -7,6 +7,10 @@ brew cask install docker-edge
 
 メモリを4GBにして、Kubernetesタブで`Enable Kubernetes`にチェック。
 
+![image](https://user-images.githubusercontent.com/106908/35770205-47f5c618-095a-11e8-8653-f7e3be3ca302.png)
+
+![image](https://user-images.githubusercontent.com/106908/35770209-56689ac2-095a-11e8-8b41-2bc407d01355.png)
+
 ```
 kubectl config uset-context docker-for-desktop
 ```
