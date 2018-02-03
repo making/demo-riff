@@ -1,1 +1,1 @@
-module.exports = (x) => x ** 2
+module.exports = async (x) => x ** 2;

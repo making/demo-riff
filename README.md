@@ -92,7 +92,23 @@ cd node/square
 
 ``` js
 cat <<EOF > square.js
-module.exports = (x) => x ** 2
+module.exports = (x) => x ** 2;
+EOF
+```
+
+`Promise`も使える
+
+``` js
+cat <<EOF > square.js
+module.exports = (x) => Promise.resolve(x ** 2);
+EOF
+```
+
+async/await
+
+``` js
+cat <<EOF > square.js
+module.exports = async (x) => x ** 2;
 EOF
 ```
 
