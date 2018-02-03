@@ -1,0 +1,9 @@
+apiVersion: projectriff.io/v1
+kind: Function
+metadata:
+  name: wordcounter
+spec:
+  protocol: pipes
+  input: words
+  container:
+    image: making/wordcounter:0.0.1

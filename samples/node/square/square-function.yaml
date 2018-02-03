@@ -1,0 +1,9 @@
+apiVersion: projectriff.io/v1
+kind: Function
+metadata:
+  name: square
+spec:
+  protocol: http
+  input: numbers
+  container:
+    image: making/square:0.0.1
