@@ -1,0 +1,16 @@
+apiVersion: projectriff.io/v1
+kind: Topic
+metadata:
+  name: fizzbuzz
+spec:
+  partitions: 1
+---
+apiVersion: projectriff.io/v1
+kind: Function
+metadata:
+  name: fizzbuzz
+spec:
+  protocol: pipes
+  input: fizzbuzz
+  container:
+    image: making/fizzbuzz:0.0.1
