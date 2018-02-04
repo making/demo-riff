@@ -401,8 +401,6 @@ docker build -t making/fizzbuzz:0.0.1 .
 ```
 
 ``` yaml
-
-```
 cat <<'EOF' > fizzbuzz.yaml
 apiVersion: projectriff.io/v1
 kind: Topic
@@ -423,8 +421,6 @@ spec:
 EOF
 ```
 
-=======
->>>>>>> 61cdb8259a89cfd38d23dc51df64890a32969147
 ```
 kubectl apply -f .
 ```
