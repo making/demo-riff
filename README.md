@@ -423,6 +423,8 @@ spec:
 EOF
 ```
 
+=======
+>>>>>>> 61cdb8259a89cfd38d23dc51df64890a32969147
 ```
 kubectl apply -f .
 ```
