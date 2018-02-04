@@ -376,5 +376,5 @@ riff create --input words -u making --artifact func.jar --handler functions.Word
 
 
 ```
-riff publish -i words -d "Hello World"
+riff publish -i words -d "Hello World" -r
 ```
